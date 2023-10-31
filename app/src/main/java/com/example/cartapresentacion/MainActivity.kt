@@ -293,12 +293,18 @@ private fun BotonGitHub(usuario: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     CartaPresentacionTheme {
-        Presentacion(
-            centro = "Virgen de la Paloma",
-            estudio = "Desarrollo de Aplicaciones Multiplataforma",
-            "+34 674650411",
-            "Luucasrsz"
-        )
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = Color(0xFFddc68b)
+        ){
+            Presentacion(
+                "Virgen de la Paloma",
+                "Desarrollo de Aplicaciones Multiplataforma",
+                "+34 674650411",
+                "Luucasrsz"
+            )
+        }
+
     }
 }
 
